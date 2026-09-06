@@ -65,6 +65,8 @@ jobs:
   cd:
     runs-on: self-hosted
     needs: ci
+    env:
+      GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
 
     steps:
       - name: Checkout repository
