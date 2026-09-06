@@ -7,6 +7,11 @@
     "start": "node src/app.js",
     "test": "jest --detectOpenHandles --forceExit"
   },
+  "jest": {
+    "roots": [
+      "<rootDir>/tests"
+    ]
+  },
   "dependencies": {
     "express": "^4.21.2"
   },

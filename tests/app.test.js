@@ -8,7 +8,7 @@ describe('GET /', () => {
     expect(response.statusCode).toBe(200);
     expect(response.body).toEqual({
       message: 'CI/CD Pipeline Operational',
-      version: '1.0.0'
+      version: '1.1.0'
     });
   });
 });
