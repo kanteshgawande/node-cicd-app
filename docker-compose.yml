@@ -1,0 +1,7 @@
+services:
+  app:
+    image: ghcr.io/${GITHUB_REPOSITORY_OWNER}/node-cicd-app:latest
+    container_name: node_cicd_service
+    ports:
+      - "3000:3000"
+    restart: always
