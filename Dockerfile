@@ -7,6 +7,7 @@ RUN npm ci --only=production
 FROM node:20-alpine AS runtime
 
 WORKDIR /app
+RUN apk upgrade --no-cache
 COPY --from=dependencies /app/node_modules ./node_modules
 COPY package*.json ./
 COPY src ./src
